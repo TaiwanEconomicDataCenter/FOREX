@@ -6,12 +6,12 @@ import numpy as np
 from datetime import datetime, date
 from dateutil.relativedelta import relativedelta
 import FOREX_extention as EXT
-from FOREX_extention import ERROR, readExcelFile
+from FOREX_extention import ERROR, readExcelFile, SELECT_DF_KEY
 
 ENCODING = EXT.ENCODING
 data_path = "./output/"
-with open(data_path+'TOT_name.txt','r',encoding='ANSI') as f:
-    DF_suffix = f.read()
+# with open(data_path+'TOT_name.txt','r',encoding='ANSI') as f:
+#     DF_suffix = f.read()
 
 if EXT.excel_suffix != "0":
     local = False
@@ -76,7 +76,7 @@ def FOREX_identity(data_path, df_key, DF_KEY, checkNotFound=False, checkDESC=Tru
                 if str(df_key.loc[ind, check]).strip().lower() != str(DF_KEY.loc[ind, check]).strip().lower():
                     if check == 'start' and (str(DF_KEY.loc[ind, check]).strip() == 'Nan' or str(df_key.loc[ind, check]).strip() < str(DF_KEY.loc[ind, check]).strip()):
                         continue
-                    elif str(DF_KEY.loc[ind, check]).strip() == 'nan' and str(df_key.loc[ind, check]).strip() == '':
+                    elif (str(DF_KEY.loc[ind, check]).strip() == 'nan' or str(DF_KEY.loc[ind, check]).strip() == 'None') and (str(df_key.loc[ind, check]).strip() == '' or str(df_key.loc[ind, check]).strip() == 'nan'):
                         continue
                     elif checkDESC == False and (check == 'desc_e' or check == 'desc_c' or check == 'form_e' or check == 'form_c'):
                         continue
@@ -147,7 +147,9 @@ if local == True:
     styr = int(input('Dealing Start Year of Main data: '))
     logging.info('Reading file: FOREX_key'+main_suf+'\n')
     df_key = readExcelFile(data_path+'FOREX_key'+main_suf+'.xlsx', header_ = 0, acceptNoFile=False, index_col_=0, sheet_name_='FOREX_key')
-    logging.info('Reading TOT file: FOREX_key'+DF_suffix+'\n')
-    DF_KEY = readExcelFile(data_path+'FOREX_key'+DF_suffix+'.xlsx', header_ = 0, acceptNoFile=False, index_col_=0, sheet_name_='FOREX_key')
+    logging.info('Reading file from DB: forex_key'+'\n')
+    DF_KEY = SELECT_DF_KEY('FOREX')
+    #logging.info('Reading TOT file: FOREX_key'+DF_suffix+'\n')
+    #DF_KEY = readExcelFile(data_path+'FOREX_key'+DF_suffix+'.xlsx', header_ = 0, acceptNoFile=False, index_col_=0, sheet_name_='FOREX_key')
     DF_KEY = DF_KEY.set_index('name') 
     unknown_list, toolong_list, update_list, unfound_list = FOREX_identity(data_path, df_key, DF_KEY, checkDESC=checkDESC, start_year=styr)

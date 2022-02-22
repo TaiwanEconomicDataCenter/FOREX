@@ -25,7 +25,7 @@ from selenium.common.exceptions import ElementClickInterceptedException
 import webdriver_manager
 from webdriver_manager.chrome import ChromeDriverManager
 sys.path.append('../TO_DB')
-from TO_DB import SELECT_DF_KEY
+from TO_DB import SELECT_DF_KEY, SELECT_DATABASES, INSERT_TABLES
 
 NAME = 'FOREX_'
 databank = NAME[:-1]
@@ -35,29 +35,12 @@ data_path = "./data/"
 out_path = "./output/"
 DB_TABLE = 'DB_'
 DB_CODE = 'data'
-excel_suffix = input('Output file suffix (If test identity press 0): ')
+excel_suffix = input('Output file suffix or mysql (If test identity press 0): ')
+if excel_suffix.lower().strip() == 'mysql':
+    excel_suffix = 'mysql'
 find_unknown = False
-main_suf = '?'
-merge_suf = '?'
 dealing_start_year = 1940
 start_year = 1940
-if excel_suffix != '0':
-    merging = False
-    updating = False
-    data_processing = bool(int(input('Processing data (1/0): ')))
-    if data_processing == False:
-        merging = bool(int(input('Merging data file = 1/Updating TOT file = 0: ')))
-        updating = not merging
-    else:
-        find_unknown = bool(int(input('Check if new items exist (1/0): ')))
-        if find_unknown == False:
-            dealing_start_year = int(input("Dealing with data from year: "))
-            start_year = dealing_start_year-5
-    if merging or updating:
-        merge_suf = input('Be Merged(Original) data suffix: ')
-        main_suf = input('Main(Updated) data suffix: ')
-    elif data_processing == False:
-        ERROR('No process was choosed')
 update = datetime.today()
 tStart = time.time()
 
@@ -482,15 +465,16 @@ def NEW_KEYS(f, freq, FREQLIST, DB_TABLE, DB_CODE, df_key, DATA_BASE, db_table_t
     
     return df_key, DATA_BASE_new, DB_name_new, db_table_t, start_table, start_code, db_table_new, db_code_new
 
-def CONCATE(NAME, suf, data_path, DB_TABLE, DB_CODE, FREQNAME, FREQLIST, tStart, df_key, KEY_DATA_t, DB_dict, DB_name_dict, find_unknown=True):
+def CONCATE(NAME, suf, data_path, DB_TABLE, DB_CODE, FREQNAME, FREQLIST, tStart, df_key, KEY_DATA_t, DB_dict, DB_name_dict, find_unknown=True, DATA_BASE_t=None):
     if find_unknown == True:
         repeated_standard = 'start'
     else:
         repeated_standard = 'last'
     #print('Reading file: '+NAME+'key'+suf+', Time: ', int(time.time() - tStart),'s'+'\n')
     #KEY_DATA_t = readExcelFile(data_path+NAME+'key'+suf+'.xlsx', header_ = 0, index_col_=0, sheet_name_=NAME+'key')
-    print('Reading file: '+NAME+'database'+suf+', Time: ', int(time.time() - tStart),'s'+'\n')
-    DATA_BASE_t = readExcelFile(data_path+NAME+'database'+suf+'.xlsx', header_ = 0, index_col_=0)
+    if DATA_BASE_t == None:
+        print('Reading file: '+NAME+'database'+suf+', Time: ', int(time.time() - tStart),'s'+'\n')
+        DATA_BASE_t = readExcelFile(data_path+NAME+'database'+suf+'.xlsx', header_ = 0, index_col_=0)
     if KEY_DATA_t.empty == False and type(DATA_BASE_t) != dict:
         ERROR(NAME+'database'+suf+'.xlsx Not Found.')
     elif type(DATA_BASE_t) != dict:
@@ -636,14 +620,16 @@ def CONCATE(NAME, suf, data_path, DB_TABLE, DB_CODE, FREQNAME, FREQLIST, tStart,
 
     return KEY_DATA_t, DATA_BASE_dict
 
-def UPDATE(original_file, updated_file, key_list, NAME, data_path, orig_suf, up_suf):
+def UPDATE(original_file, updated_file, key_list, NAME, data_path, orig_suf, up_suf, original_database=None, updated_database=None):
     updated = 0
     tStart = time.time()
     print('Updating file: ', int(time.time() - tStart),'s'+'\n')
-    print('Reading original database: '+NAME+'database'+orig_suf+', Time: ', int(time.time() - tStart),'s'+'\n')
-    original_database = readExcelFile(data_path+NAME+'database'+orig_suf+'.xlsx', header_ = 0, index_col_=0, acceptNoFile=False)
-    print('Reading updated database: '+NAME+'database'+up_suf+'.xlsx, Time: ', int(time.time() - tStart),'s'+'\n')
-    updated_database = readExcelFile(data_path+NAME+'database'+up_suf+'.xlsx', header_ = 0, index_col_=0, acceptNoFile=False)
+    if original_database == None:
+        print('Reading original database: '+NAME+'database'+orig_suf+', Time: ', int(time.time() - tStart),'s'+'\n')
+        original_database = readExcelFile(data_path+NAME+'database'+orig_suf+'.xlsx', header_ = 0, index_col_=0, acceptNoFile=False)
+    if updated_database == None:
+        print('Reading updated database: '+NAME+'database'+up_suf+'.xlsx, Time: ', int(time.time() - tStart),'s'+'\n')
+        updated_database = readExcelFile(data_path+NAME+'database'+up_suf+'.xlsx', header_ = 0, index_col_=0, acceptNoFile=False)
     CAT = ['desc_e', 'desc_c', 'base', 'quote', 'form_e', 'form_c']
     
     original_file = original_file.set_index('name')

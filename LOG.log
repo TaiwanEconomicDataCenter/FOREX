@@ -1,168 +1,28 @@
-﻿2022-02-11 11:05:21 AM excel_suffix: UP
+﻿2022-02-22 02:24:16 PM excel_suffix: mysql
 
-2022-02-11 11:05:21 AM merging: False
+2022-02-22 02:24:16 PM data_processing: False
 
-2022-02-11 11:05:21 AM updating: False
+2022-02-22 02:24:16 PM find_unknown: False
 
-2022-02-11 11:05:21 AM find_unknown: False
+2022-02-22 02:24:16 PM dealing_start_year: 1940
 
-2022-02-11 11:05:21 AM dealing_start_year: 2020
+2022-02-22 02:24:46 PM Process: File Updating
 
-2022-02-11 11:05:21 AM Data Processing
+2022-02-22 02:24:46 PM Reading main key: FOREX_keyUP.xlsx, Time: 31 s
 
-2022-02-11 11:05:23 AM Reading file: FOREX_keyTOT202201, Time: 3 s
+2022-02-22 02:24:49 PM Reading main database: FOREX_databaseUP.xlsx, Time: 35 s
 
-2022-02-11 11:05:26 AM 
-
-2022-02-11 11:05:26 AM ====== WebDriver manager ======
-2022-02-11 11:05:26 AM Current google-chrome version is 98.0.4758
-2022-02-11 11:05:26 AM Get LATEST driver version for 98.0.4758
-2022-02-11 11:05:26 AM Driver [C:\Users\user\.wdm\drivers\chromedriver\win32\98.0.4758.80\chromedriver.exe] found in cache
-2022-02-11 11:05:29 AM Reading file: FOREX_1 Time: 9 s
-
-2022-02-11 11:05:29 AM Downloading file: FOREX_1
-
-2022-02-11 11:05:55 AM Total Columns: 259 Time: 34 s
-
-2022-02-11 11:06:27 AM Reading file: FOREX_2 Time: 66 s
-
-2022-02-11 11:06:27 AM Downloading file: FOREX_2
-
-2022-02-11 11:06:42 AM Total Columns: 31 Time: 82 s
-
-2022-02-11 11:06:44 AM Reading file: FOREX_3 Time: 84 s
-
-2022-02-11 11:06:44 AM Frequency = A Time: 84 s
-
-2022-02-11 11:06:44 AM Downloading file: FOREX_3A
-
-2022-02-11 11:07:36 AM Total Rows: 219 Time: 135 s
-
-2022-02-11 11:07:48 AM Frequency = M Time: 147 s
-
-2022-02-11 11:07:48 AM Downloading file: FOREX_3M
-
-2022-02-11 11:08:27 AM Total Rows: 219 Time: 187 s
-
-2022-02-11 11:08:42 AM Frequency = Q Time: 202 s
-
-2022-02-11 11:08:42 AM Downloading file: FOREX_3Q
-
-2022-02-11 11:09:18 AM Total Rows: 219 Time: 238 s
-
-2022-02-11 11:09:31 AM Frequency = S Time: 250 s
-
-2022-02-11 11:09:31 AM Present File Exists. Reading Data From Default Path.
-
-2022-02-11 11:09:33 AM Total Rows: 219 Time: 252 s
-
-2022-02-11 11:09:45 AM Reading file: FOREX_4 Time: 264 s
-
-2022-02-11 11:09:45 AM Frequency = A Time: 264 s
-
-2022-02-11 11:09:45 AM Downloading file: FOREX_4A
-
-2022-02-11 11:10:19 AM Total Rows: 220 Time: 298 s
-
-2022-02-11 11:10:31 AM Frequency = M Time: 310 s
-
-2022-02-11 11:10:31 AM Downloading file: FOREX_4M
-
-2022-02-11 11:11:11 AM Total Rows: 220 Time: 351 s
-
-2022-02-11 11:11:26 AM Frequency = Q Time: 365 s
-
-2022-02-11 11:11:26 AM Downloading file: FOREX_4Q
-
-2022-02-11 11:12:04 AM Total Rows: 220 Time: 403 s
-
-2022-02-11 11:12:16 AM Frequency = S Time: 416 s
-
-2022-02-11 11:12:16 AM Present File Exists. Reading Data From Default Path.
-
-2022-02-11 11:12:17 AM Total Rows: 220 Time: 416 s
-
-2022-02-11 11:12:28 AM Reading file: FOREX_5 Time: 428 s
-
-2022-02-11 11:12:28 AM Frequency = A Time: 428 s
-
-2022-02-11 11:12:28 AM Downloading file: FOREX_5A
-
-2022-02-11 11:13:06 AM Total Rows: 219 Time: 466 s
-
-2022-02-11 11:13:24 AM Frequency = M Time: 483 s
-
-2022-02-11 11:13:24 AM Downloading file: FOREX_5M
-
-2022-02-11 11:14:03 AM Total Rows: 219 Time: 522 s
-
-2022-02-11 11:14:29 AM Frequency = Q Time: 549 s
-
-2022-02-11 11:14:29 AM Downloading file: FOREX_5Q
-
-2022-02-11 11:15:07 AM Total Rows: 219 Time: 586 s
-
-2022-02-11 11:15:28 AM Frequency = S Time: 608 s
-
-2022-02-11 11:15:28 AM Present File Exists. Reading Data From Default Path.
-
-2022-02-11 11:15:30 AM Total Rows: 219 Time: 610 s
-
-2022-02-11 11:15:51 AM Reading file: FOREX_6 Time: 630 s
-
-2022-02-11 11:15:51 AM Frequency = A Time: 630 s
-
-2022-02-11 11:15:51 AM Downloading file: FOREX_6A
-
-2022-02-11 11:16:25 AM Total Rows: 220 Time: 664 s
-
-2022-02-11 11:16:47 AM Frequency = M Time: 686 s
-
-2022-02-11 11:16:47 AM Downloading file: FOREX_6M
-
-2022-02-11 11:17:26 AM Total Rows: 220 Time: 725 s
-
-2022-02-11 11:18:00 AM Frequency = Q Time: 759 s
-
-2022-02-11 11:18:00 AM Downloading file: FOREX_6Q
-
-2022-02-11 11:18:36 AM Total Rows: 220 Time: 795 s
-
-2022-02-11 11:19:03 AM Frequency = S Time: 822 s
-
-2022-02-11 11:19:03 AM Present File Exists. Reading Data From Default Path.
-
-2022-02-11 11:19:03 AM Total Rows: 220 Time: 823 s
-
-2022-02-11 11:19:28 AM Reading file: FOREX_7 Time: 848 s
-
-2022-02-11 11:19:28 AM Downloading file: FOREX_7
-
-2022-02-11 11:19:44 AM Total Rows: 23 Time: 863 s
-
-2022-02-11 11:19:44 AM Reading file: FOREX_8 Time: 864 s
-
-2022-02-11 11:19:44 AM Downloading file: FOREX_8
-
-2022-02-11 11:22:18 AM Total Columns: 40 Time: 1017 s
-
-2022-02-11 11:27:16 AM Reading file: FOREX_9 Time: 1316 s
-
-2022-02-11 11:27:16 AM Downloading file: FOREX_9
-
-2022-02-11 11:27:36 AM Total Columns: 4 Time: 1335 s
-
-2022-02-11 11:28:32 AM       databank              name   db_table  db_code                                             desc_e  ...                       quote    snl                                    source                                      form_e form_c
-0        FOREX           A001REX  DB_A_0001  data001  Exchange Rate (Nominal Index 2015=100): Intern...  ...       Special Drawing Right      1  International Financial Statistics (IFS)  Average of observations through period (A)       
-1        FOREX          A001REXA  DB_A_0001  data002  Exchange Rate: International Monetary Fund (IM...  ...       Special Drawing Right      2  International Financial Statistics (IFS)  Average of observations through period (A)       
-2        FOREX          A001REXD  DB_A_0001  data003  Exchange Rate: United States Dollar Per Intern...  ...  United States Dollar (USD)      3  International Financial Statistics (IFS)  Average of observations through period (A)       
-3        FOREX          A001REXE  DB_A_0001  data004  Exchange Rate: International Monetary Fund (IM...  ...       Special Drawing Right      4  International Financial Statistics (IFS)                           End of period (E)       
-4        FOREX        A001REXEUR  DB_A_0001  data005  Exchange Rate: Euro (Prior Dec 1998 Ecu) Per I...  ...                        Euro      5  International Financial Statistics (IFS)  Average of observations through period (A)       
+2022-02-22 02:36:54 PM       databank              name   db_table  db_code                                             desc_e  ...                       quote    snl                                    source                                      form_e form_c
+0        FOREX           A001REX  DB_A_0001  data001  Exchange Rate (Nominal Index 2015=100): Intern...  ...       Special Drawing Right      1  International Financial Statistics (IFS)  Average of observations through period (A)    NaN
+1        FOREX          A001REXA  DB_A_0001  data002  Exchange Rate: International Monetary Fund (IM...  ...       Special Drawing Right      2  International Financial Statistics (IFS)  Average of observations through period (A)    NaN
+2        FOREX          A001REXD  DB_A_0001  data003  Exchange Rate: United States Dollar Per Intern...  ...  United States Dollar (USD)      3  International Financial Statistics (IFS)  Average of observations through period (A)    NaN
+3        FOREX          A001REXE  DB_A_0001  data004  Exchange Rate: International Monetary Fund (IM...  ...       Special Drawing Right      4  International Financial Statistics (IFS)                           End of period (E)    NaN
+4        FOREX        A001REXEUR  DB_A_0001  data005  Exchange Rate: Euro (Prior Dec 1998 Ecu) Per I...  ...                        Euro      5  International Financial Statistics (IFS)  Average of observations through period (A)    NaN
 ...        ...               ...        ...      ...                                                ...  ...                         ...    ...                                       ...                                         ...    ...
-14780    FOREX  WB93REXEUREECB.W  DB_W_0003  data115  Chrismas Island, Cocos (Keeling) Islands,Heard...  ...          Austrian Schilling  14781         Official ECB & EUROSTAT Reference                           End of period (E)       
-14781    FOREX     WB93REXEURI.W  DB_W_0003  data116  Chrismas Island, Cocos (Keeling) Islands,Heard...  ...                        Euro  14782         Official ECB & EUROSTAT Reference                           End of period (E)       
-14782    FOREX  WB93REXEURIECB.W  DB_W_0003  data117  Chrismas Island, Cocos (Keeling) Islands,Heard...  ...                        Euro  14783         Official ECB & EUROSTAT Reference                           End of period (E)       
-14783    FOREX  WB96REXEURDECB.W  DB_W_0003  data118  Picairn Islands Foreign Exchange Official Euro...  ...          New Zealand Dollar  14784         Official ECB & EUROSTAT Reference  Average of observations through period (A)       
-14784    FOREX   WB96REXEURECB.W  DB_W_0003  data119  Picairn Islands Foreign Exchange Official Euro...  ...                        Euro  14785         Official ECB & EUROSTAT Reference  Average of observations through period (A)       
+14822    FOREX  WB93REXEUREECB.W  DB_W_0003  data115  Chrismas Island, Cocos (Keeling) Islands,Heard...  ...          Austrian Schilling  14823         Official ECB & EUROSTAT Reference                           End of period (E)    NaN
+14823    FOREX     WB93REXEURI.W  DB_W_0003  data116  Chrismas Island, Cocos (Keeling) Islands,Heard...  ...                        Euro  14824         Official ECB & EUROSTAT Reference                           End of period (E)    NaN
+14824    FOREX  WB93REXEURIECB.W  DB_W_0003  data117  Chrismas Island, Cocos (Keeling) Islands,Heard...  ...                        Euro  14825         Official ECB & EUROSTAT Reference                           End of period (E)    NaN
+14825    FOREX  WB96REXEURDECB.W  DB_W_0003  data118  Picairn Islands Foreign Exchange Official Euro...  ...          New Zealand Dollar  14826         Official ECB & EUROSTAT Reference  Average of observations through period (A)    NaN
+14826    FOREX   WB96REXEURECB.W  DB_W_0003  data119  Picairn Islands Foreign Exchange Official Euro...  ...                        Euro  14827         Official ECB & EUROSTAT Reference  Average of observations through period (A)    NaN
 
-[14785 rows x 15 columns]
+[14827 rows x 15 columns]

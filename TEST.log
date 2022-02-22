@@ -1,9 +1,24 @@
-﻿2022-02-11 11:28:52 AM Checking Identities: 1411 s
+﻿2022-02-22 02:21:49 PM Checking Identities: 7 s
 
-2022-02-11 11:28:56 AM unknown: 0
-2022-02-11 11:28:56 AM name too long: 0
-2022-02-11 11:28:56 AM inconsistent: 0
-2022-02-11 11:28:56 AM updated: 8735
-2022-02-11 11:28:56 AM including weekly: True
-2022-02-11 11:28:56 AM too many months: False
-2022-02-11 11:28:56 AM unfound: 0
+2022-02-22 02:21:50 PM The program did not fetch the latest data for: A925REXEUR
+2022-02-22 02:21:50 PM The program did not fetch the latest data for: A925REXEURD
+2022-02-22 02:21:50 PM The program did not fetch the latest data for: A925REXEURE
+2022-02-22 02:21:50 PM The program did not fetch the latest data for: A925REXEURI
+2022-02-22 02:21:51 PM The program did not fetch the latest data for: M925REXEUR.M
+2022-02-22 02:21:51 PM The program did not fetch the latest data for: M925REXEURD.M
+2022-02-22 02:21:51 PM The program did not fetch the latest data for: M925REXEURE.M
+2022-02-22 02:21:51 PM The program did not fetch the latest data for: M925REXEURI.M
+2022-02-22 02:21:53 PM The program did not fetch the latest data for: Q925REXEUR.Q
+2022-02-22 02:21:53 PM The program did not fetch the latest data for: Q925REXEURD.Q
+2022-02-22 02:21:53 PM The program did not fetch the latest data for: Q925REXEURE.Q
+2022-02-22 02:21:53 PM The program did not fetch the latest data for: Q925REXEURI.Q
+2022-02-22 02:21:54 PM The program did not fetch the latest data for: S925REXEUR.S
+2022-02-22 02:21:54 PM The program did not fetch the latest data for: S925REXEURD.S
+2022-02-22 02:21:54 PM The program did not fetch the latest data for: S925REXEURE.S
+2022-02-22 02:21:54 PM The program did not fetch the latest data for: S925REXEURI.S
+2022-02-22 02:21:54 PM unknown: 0
+2022-02-22 02:21:54 PM name too long: 0
+2022-02-22 02:21:54 PM inconsistent: 0
+2022-02-22 02:21:54 PM updated: 11554
+2022-02-22 02:21:54 PM including weekly: True
+2022-02-22 02:21:54 PM too many months: False
