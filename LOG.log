@@ -1,89 +1,95 @@
-﻿2022-04-06 11:02:37 AM excel_suffix: UP
+﻿2022-04-06 12:00:58 PM excel_suffix: UP2
 
-2022-04-06 11:02:37 AM data_processing: True
+2022-04-06 12:00:58 PM data_processing: True
 
-2022-04-06 11:02:37 AM find_unknown: False
+2022-04-06 12:00:58 PM find_unknown: False
 
-2022-04-06 11:02:37 AM dealing_start_year: 1940
+2022-04-06 12:00:58 PM dealing_start_year: 1940
 
-2022-04-06 11:03:26 AM Data Processing
+2022-04-06 12:01:04 PM Data Processing
 
-2022-04-06 11:03:26 AM 
+2022-04-06 12:01:04 PM 
 
-2022-04-06 11:03:26 AM ====== WebDriver manager ======
-2022-04-06 11:03:26 AM Current google-chrome version is 99.0.4844
-2022-04-06 11:03:26 AM Get LATEST chromedriver version for 99.0.4844 google-chrome
-2022-04-06 11:03:27 AM Trying to download new driver from https://chromedriver.storage.googleapis.com/99.0.4844.51/chromedriver_win32.zip
-2022-04-06 11:03:29 AM Driver has been saved in cache [C:\Users\user\.wdm\drivers\chromedriver\win32\99.0.4844.51]
-2022-04-06 11:03:31 AM Reading file: FOREX_1 Time: 55 s
+2022-04-06 12:01:04 PM ====== WebDriver manager ======
+2022-04-06 12:01:04 PM Current google-chrome version is 99.0.4844
+2022-04-06 12:01:04 PM Get LATEST chromedriver version for 99.0.4844 google-chrome
+2022-04-06 12:01:04 PM Trying to download new driver from https://chromedriver.storage.googleapis.com/99.0.4844.51/chromedriver_win32.zip
+2022-04-06 12:01:07 PM Driver has been saved in cache [C:\Users\user\.wdm\drivers\chromedriver\win32\99.0.4844.51]
+2022-04-06 12:01:08 PM Reading file: FOREX_1 Time: 12 s
 
-2022-04-06 11:03:31 AM Present File Exists. Reading Data From Default Path.
+2022-04-06 12:01:08 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-06 11:03:31 AM Total Columns: 259 Time: 55 s
+2022-04-06 12:01:08 PM Total Columns: 259 Time: 12 s
 
-2022-04-06 11:04:56 AM Reading file: FOREX_2 Time: 140 s
+2022-04-06 12:02:22 PM Reading file: FOREX_2 Time: 86 s
 
-2022-04-06 11:04:56 AM Present File Exists. Reading Data From Default Path.
+2022-04-06 12:02:22 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-06 11:04:56 AM Total Columns: 31 Time: 140 s
+2022-04-06 12:02:22 PM Total Columns: 31 Time: 86 s
 
-2022-04-06 11:05:01 AM Reading file: FOREX_3 Time: 145 s
+2022-04-06 12:02:25 PM Reading file: FOREX_3 Time: 89 s
 
-2022-04-06 11:05:01 AM Frequency = A Time: 145 s
+2022-04-06 12:02:25 PM Frequency = A Time: 89 s
 
-2022-04-06 11:05:01 AM Present File Exists. Reading Data From Default Path.
+2022-04-06 12:02:25 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-06 11:05:01 AM Total Rows: 219 Time: 145 s
+2022-04-06 12:02:26 PM Total Rows: 219 Time: 89 s
 
-2022-04-06 11:05:20 AM Frequency = M Time: 164 s
+2022-04-06 12:02:38 PM Frequency = M Time: 101 s
 
-2022-04-06 11:05:20 AM Present File Exists. Reading Data From Default Path.
+2022-04-06 12:02:38 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-06 11:05:22 AM Total Rows: 219 Time: 165 s
+2022-04-06 12:02:39 PM Total Rows: 219 Time: 103 s
 
-2022-04-06 11:07:03 AM Frequency = Q Time: 267 s
+2022-04-06 12:02:58 PM Frequency = Q Time: 122 s
 
-2022-04-06 11:07:03 AM Present File Exists. Reading Data From Default Path.
+2022-04-06 12:02:58 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-06 11:07:04 AM Total Rows: 219 Time: 268 s
+2022-04-06 12:02:59 PM Total Rows: 219 Time: 123 s
 
-2022-04-06 11:07:44 AM Frequency = S Time: 308 s
+2022-04-06 12:03:13 PM Frequency = S Time: 136 s
 
-2022-04-06 11:07:44 AM Present File Exists. Reading Data From Default Path.
+2022-04-06 12:03:13 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-06 11:07:46 AM Total Rows: 219 Time: 310 s
+2022-04-06 12:03:14 PM Total Rows: 219 Time: 138 s
 
-2022-04-06 11:07:57 AM Reading file: FOREX_4 Time: 321 s
+2022-04-06 12:03:26 PM Reading file: FOREX_4 Time: 150 s
 
-2022-04-06 11:07:57 AM Frequency = A Time: 321 s
+2022-04-06 12:03:26 PM Frequency = A Time: 150 s
 
-2022-04-06 11:07:57 AM Present File Exists. Reading Data From Default Path.
+2022-04-06 12:03:26 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-06 11:07:57 AM Total Rows: 220 Time: 321 s
+2022-04-06 12:03:26 PM Total Rows: 220 Time: 150 s
 
-2022-04-06 11:08:16 AM Frequency = M Time: 339 s
+2022-04-06 12:03:38 PM Frequency = M Time: 162 s
 
-2022-04-06 11:08:16 AM Present File Exists. Reading Data From Default Path.
+2022-04-06 12:03:38 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-06 11:08:17 AM Total Rows: 220 Time: 341 s
+2022-04-06 12:03:39 PM Total Rows: 220 Time: 163 s
 
-2022-04-06 11:09:54 AM Frequency = Q Time: 438 s
+2022-04-06 12:03:58 PM Frequency = Q Time: 182 s
 
-2022-04-06 11:09:54 AM Present File Exists. Reading Data From Default Path.
+2022-04-06 12:03:58 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-06 11:09:55 AM Total Rows: 220 Time: 438 s
+2022-04-06 12:03:58 PM Total Rows: 220 Time: 182 s
 
-2022-04-06 11:10:36 AM Frequency = S Time: 480 s
+2022-04-06 12:04:12 PM Frequency = S Time: 196 s
 
-2022-04-06 11:10:36 AM Present File Exists. Reading Data From Default Path.
+2022-04-06 12:04:12 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-06 11:10:37 AM Total Rows: 220 Time: 480 s
+2022-04-06 12:04:13 PM Total Rows: 220 Time: 196 s
 
-2022-04-06 11:10:48 AM Reading file: FOREX_5 Time: 492 s
+2022-04-06 12:04:24 PM Reading file: FOREX_5 Time: 208 s
 
-2022-04-06 11:10:48 AM Frequency = A Time: 492 s
+2022-04-06 12:04:24 PM Frequency = A Time: 208 s
 
-2022-04-06 11:10:48 AM Present File Exists. Reading Data From Default Path.
+2022-04-06 12:04:24 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-06 11:10:48 AM Total Rows: 219 Time: 492 s
+2022-04-06 12:04:24 PM Total Rows: 219 Time: 208 s
+
+2022-04-06 12:04:46 PM Frequency = M Time: 230 s
+
+2022-04-06 12:04:46 PM Present File Exists. Reading Data From Default Path.
+
+2022-04-06 12:04:48 PM Total Rows: 219 Time: 231 s
 

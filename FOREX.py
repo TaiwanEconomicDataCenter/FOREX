@@ -268,7 +268,7 @@ for g in range(start_file,last_file+1):
             for opp in [False, True]:
                 code_num_dict[frequency], table_num_dict[frequency], SORT_DATA[frequency], DATA_BASE_dict[frequency], db_table_t_dict[frequency], DB_name_dict[frequency], snl, new_item_counts = \
                     FOREX_DATA(i, new_item_counts, DF_KEY, FOREX_t, AREMOS_forex, code_num_dict[frequency], table_num_dict[frequency], KEY_DATA, SORT_DATA[frequency], DATA_BASE_dict[frequency], db_table_t_dict[frequency],\
-                        DB_name_dict[frequency], snl, source, FREQLIST[frequency], frequency, form_e, FOREXcurrency, opp=opp, suffix=SUFFIX[frequency], freqnum=freqnum, freqsuffix=freqsuffix, keysuffix=keysuffix, weekA=weekA)
+                        DB_name_dict[frequency], snl, source, FREQLIST[frequency], frequency, form_e, FOREXcurrency, opp=opp, suffix=SUFFIX[frequency], freqnum=freqnum, freqsuffix=freqsuffix, keysuffix=keysuffix, weekA=weekA, dealing_start_year=dealing_start_year)
             
             if str(FOREX_t.columns[i][0]).find('EXR.M') >= 0 and str(FOREX_t.columns[i][0]).find('SP00.E') >= 0:#Using End of period Monthly data to produce End of period Semiannual data
                 freqnum = 5
@@ -278,7 +278,7 @@ for g in range(start_file,last_file+1):
                 for opp in [False, True]:
                     code_num_dict[frequency], table_num_dict[frequency], SORT_DATA[frequency], DATA_BASE_dict[frequency], db_table_t_dict[frequency], DB_name_dict[frequency], snl, new_item_counts = \
                         FOREX_DATA(i, new_item_counts, DF_KEY, FOREX_t, AREMOS_forex, code_num_dict[frequency], table_num_dict[frequency], KEY_DATA, SORT_DATA[frequency], DATA_BASE_dict[frequency], db_table_t_dict[frequency],\
-                            DB_name_dict[frequency], snl, source, FREQLIST[frequency], frequency, form_e, FOREXcurrency, opp=opp, suffix=SUFFIX[frequency], freqnum=freqnum, freqsuffix=freqsuffix, keysuffix=keysuffix, weekA=weekA)
+                            DB_name_dict[frequency], snl, source, FREQLIST[frequency], frequency, form_e, FOREXcurrency, opp=opp, suffix=SUFFIX[frequency], freqnum=freqnum, freqsuffix=freqsuffix, keysuffix=keysuffix, weekA=weekA, dealing_start_year=dealing_start_year)
             elif str(FOREX_t.columns[i][0]).find('EXR.D') >= 0 and str(FOREX_t.columns[i][0]).find('ISK') >= 0:#Using Iceland Daily data to produce End of period data of other frequency of Iceland
                 weekA = False
                 form_e = 'End of period (E)'
@@ -289,7 +289,7 @@ for g in range(start_file,last_file+1):
                 for opp in [False, True]:
                     code_num_dict[frequency], table_num_dict[frequency], SORT_DATA[frequency], DATA_BASE_dict[frequency], db_table_t_dict[frequency], DB_name_dict[frequency], snl, new_item_counts = \
                         FOREX_DATA(i, new_item_counts, DF_KEY, FOREX_t, AREMOS_forex, code_num_dict[frequency], table_num_dict[frequency], KEY_DATA, SORT_DATA[frequency], DATA_BASE_dict[frequency], db_table_t_dict[frequency],\
-                            DB_name_dict[frequency], snl, source, FREQLIST[frequency], frequency, form_e, FOREXcurrency, opp=opp, suffix=SUFFIX[frequency], freqnum=freqnum, freqsuffix=freqsuffix, keysuffix=keysuffix, weekA=weekA)
+                            DB_name_dict[frequency], snl, source, FREQLIST[frequency], frequency, form_e, FOREXcurrency, opp=opp, suffix=SUFFIX[frequency], freqnum=freqnum, freqsuffix=freqsuffix, keysuffix=keysuffix, weekA=weekA, dealing_start_year=dealing_start_year)
                 freqnum = 5
                 freqsuffix = ['Q1','Q1','Q1','Q1','Q2','Q2','Q2','Q2','Q3','Q3','Q3','Q3','Q4','Q4','Q4','Q4']
                 frequency = 'Q'
@@ -297,7 +297,7 @@ for g in range(start_file,last_file+1):
                 for opp in [False, True]:
                     code_num_dict[frequency], table_num_dict[frequency], SORT_DATA[frequency], DATA_BASE_dict[frequency], db_table_t_dict[frequency], DB_name_dict[frequency], snl, new_item_counts = \
                         FOREX_DATA(i, new_item_counts, DF_KEY, FOREX_t, AREMOS_forex, code_num_dict[frequency], table_num_dict[frequency], KEY_DATA, SORT_DATA[frequency], DATA_BASE_dict[frequency], db_table_t_dict[frequency],\
-                            DB_name_dict[frequency], snl, source, FREQLIST[frequency], frequency, form_e, FOREXcurrency, opp=opp, suffix=SUFFIX[frequency], freqnum=freqnum, freqsuffix=freqsuffix, keysuffix=keysuffix, weekA=weekA)
+                            DB_name_dict[frequency], snl, source, FREQLIST[frequency], frequency, form_e, FOREXcurrency, opp=opp, suffix=SUFFIX[frequency], freqnum=freqnum, freqsuffix=freqsuffix, keysuffix=keysuffix, weekA=weekA, dealing_start_year=dealing_start_year)
                 freqnum = 5
                 freqsuffix = ['S1','S1','S1','S1','S2','S2','S2','S2']
                 frequency = 'S'
@@ -305,7 +305,7 @@ for g in range(start_file,last_file+1):
                 for opp in [False, True]:
                     code_num_dict[frequency], table_num_dict[frequency], SORT_DATA[frequency], DATA_BASE_dict[frequency], db_table_t_dict[frequency], DB_name_dict[frequency], snl, new_item_counts = \
                         FOREX_DATA(i, new_item_counts, DF_KEY, FOREX_t, AREMOS_forex, code_num_dict[frequency], table_num_dict[frequency], KEY_DATA, SORT_DATA[frequency], DATA_BASE_dict[frequency], db_table_t_dict[frequency],\
-                            DB_name_dict[frequency], snl, source, FREQLIST[frequency], frequency, form_e, FOREXcurrency, opp=opp, suffix=SUFFIX[frequency], freqnum=freqnum, freqsuffix=freqsuffix, keysuffix=keysuffix, weekA=weekA)
+                            DB_name_dict[frequency], snl, source, FREQLIST[frequency], frequency, form_e, FOREXcurrency, opp=opp, suffix=SUFFIX[frequency], freqnum=freqnum, freqsuffix=freqsuffix, keysuffix=keysuffix, weekA=weekA, dealing_start_year=dealing_start_year)
                 freqnum = 4
                 freqsuffix = ['','','','']
                 frequency = 'A'
@@ -313,7 +313,7 @@ for g in range(start_file,last_file+1):
                 for opp in [False, True]:
                     code_num_dict[frequency], table_num_dict[frequency], SORT_DATA[frequency], DATA_BASE_dict[frequency], db_table_t_dict[frequency], DB_name_dict[frequency], snl, new_item_counts = \
                         FOREX_DATA(i, new_item_counts, DF_KEY, FOREX_t, AREMOS_forex, code_num_dict[frequency], table_num_dict[frequency], KEY_DATA, SORT_DATA[frequency], DATA_BASE_dict[frequency], db_table_t_dict[frequency],\
-                            DB_name_dict[frequency], snl, source, FREQLIST[frequency], frequency, form_e, FOREXcurrency, opp=opp, suffix=SUFFIX[frequency], freqnum=freqnum, freqsuffix=freqsuffix, keysuffix=keysuffix, weekA=weekA)
+                            DB_name_dict[frequency], snl, source, FREQLIST[frequency], frequency, form_e, FOREXcurrency, opp=opp, suffix=SUFFIX[frequency], freqnum=freqnum, freqsuffix=freqsuffix, keysuffix=keysuffix, weekA=weekA, dealing_start_year=dealing_start_year)
     
     elif g >= 3 and g <= 6:############################################################ IMF ##################################################################
         for frequency in ['A','M','Q','S']:
@@ -378,7 +378,7 @@ for g in range(start_file,last_file+1):
                 for opp in [False, True]:
                     code_num_dict[frequency], table_num_dict[frequency], SORT_DATA[frequency], DATA_BASE_dict[frequency], db_table_t_dict[frequency], DB_name_dict[frequency], snl, new_item_counts = \
                         FOREX_DATA(i, new_item_counts, DF_KEY, FOREX_t, AREMOS_forex, code_num_dict[frequency], table_num_dict[frequency], KEY_DATA, SORT_DATA[frequency], DATA_BASE_dict[frequency], db_table_t_dict[frequency],\
-                            DB_name_dict[frequency], snl, source, FREQLIST[frequency], frequency, form_e, FOREXcurrency, opp=opp, suffix=SUFFIX[frequency], freqnum=freqnum, freqsuffix=freqsuffix, keysuffix=keysuffix, repl=REPL[frequency], semi=semi, semiA=semiA)
+                            DB_name_dict[frequency], snl, source, FREQLIST[frequency], frequency, form_e, FOREXcurrency, opp=opp, suffix=SUFFIX[frequency], freqnum=freqnum, freqsuffix=freqsuffix, keysuffix=keysuffix, repl=REPL[frequency], semi=semi, semiA=semiA, dealing_start_year=dealing_start_year)
                 
             sys.stdout.write("\n\n") 
             
@@ -393,7 +393,7 @@ for g in range(start_file,last_file+1):
                 for opp in [False, True]:
                     code_num_dict[frequency], table_num_dict[frequency], SORT_DATA[frequency], DATA_BASE_dict[frequency], db_table_t_dict[frequency], DB_name_dict[frequency], snl, new_item_counts = \
                         FOREX_CROSSRATE(g, new_item_counts, DF_KEY, df_key_temp, AREMOS_forex, code_num_dict[frequency], table_num_dict[frequency], KEY_DATA, SORT_DATA[frequency], DATA_BASE_dict[frequency], db_table_t_dict[frequency],\
-                            DB_name_dict[frequency], snl, source, FREQLIST[frequency], frequency, form_e, FOREXcurrency, opp=opp, suffix=SUFFIX[frequency])
+                            DB_name_dict[frequency], snl, source, FREQLIST[frequency], frequency, form_e, FOREXcurrency, opp=opp, suffix=SUFFIX[frequency], dealing_start_year=dealing_start_year)
     
     elif g == 7 or g == 10 or g == 11:
         if g == 7:
@@ -432,7 +432,7 @@ for g in range(start_file,last_file+1):
             
             code_num_dict[frequency], table_num_dict[frequency], SORT_DATA[frequency], DATA_BASE_dict[frequency], db_table_t_dict[frequency], DB_name_dict[frequency], snl, new_item_counts = \
                 FOREX_DATA(i, new_item_counts, DF_KEY, FOREX_t, AREMOS_forex, code_num_dict[frequency], table_num_dict[frequency], KEY_DATA, SORT_DATA[frequency], DATA_BASE_dict[frequency], db_table_t_dict[frequency],\
-                    DB_name_dict[frequency], snl, source, FREQLIST[frequency], frequency, form_e, FOREXcurrency, opp=False, suffix=SUFFIX[frequency], repl=REPL[frequency])
+                    DB_name_dict[frequency], snl, source, FREQLIST[frequency], frequency, form_e, FOREXcurrency, opp=False, suffix=SUFFIX[frequency], repl=REPL[frequency], dealing_start_year=dealing_start_year)
                     
     sys.stdout.write("\n\n")
     if find_unknown == True:

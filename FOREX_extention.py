@@ -1069,7 +1069,7 @@ def FOREX_NAME(source, frequency, form_e, FOREXcurrency, ind, FOREX_t, SORT_DATA
     
     return name, value, index, index_item, roundnum, code, name_replicate
 
-def FOREX_DATA(ind, new_item_counts, DF_KEY, FOREX_t, AREMOS_forex, code_num, table_num, KEY_DATA, SORT_DATA, DATA_BASE, db_table_t, DB_name, snl, source, freqlist, frequency, form_e, FOREXcurrency, opp=False, suffix='', freqnum=None, freqsuffix=[], keysuffix=[], repl=None, again='', semiA=False, semi=False, weekA=False, weekE=False):
+def FOREX_DATA(ind, new_item_counts, DF_KEY, FOREX_t, AREMOS_forex, code_num, table_num, KEY_DATA, SORT_DATA, DATA_BASE, db_table_t, DB_name, snl, source, freqlist, frequency, form_e, FOREXcurrency, opp=False, suffix='', freqnum=None, freqsuffix=[], keysuffix=[], repl=None, again='', semiA=False, semi=False, weekA=False, weekE=False, dealing_start_year=dealing_start_year):
     freqlen = len(freqlist)
     name_replicate = []
     NonValue = ['nan','-','']
@@ -1403,7 +1403,7 @@ def FOREX_DATA(ind, new_item_counts, DF_KEY, FOREX_t, AREMOS_forex, code_num, ta
     
     return code_num, table_num, SORT_DATA, DATA_BASE, db_table_t, DB_name, snl, new_item_counts
 
-def FOREX_CROSSRATE(g, new_item_counts, DF_KEY, df_key, AREMOS_forex, code_num, table_num, KEY_DATA, SORT_DATA, DATA_BASE, db_table_t, DB_name, snl, source, freqlist, frequency, form_e, FOREXcurrency, opp=False, suffix=''):
+def FOREX_CROSSRATE(g, new_item_counts, DF_KEY, df_key, AREMOS_forex, code_num, table_num, KEY_DATA, SORT_DATA, DATA_BASE, db_table_t, DB_name, snl, source, freqlist, frequency, form_e, FOREXcurrency, opp=False, suffix='', dealing_start_year=dealing_start_year):
     freqlen = len(freqlist)
     NonValue = ['nan','-','']
     print('Calculating Cross Rate: '+NAME+str(g)+', frequency = '+frequency+', opposite = '+str(opp)+' Time: ', int(time.time() - tStart),'s'+'\n')
