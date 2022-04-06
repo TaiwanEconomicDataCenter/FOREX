@@ -284,7 +284,9 @@ def FOREX_WEB(chrome, g, file_name, url, header=None, index_col=0, skiprows=None
                 else:
                     report = 'Entire report'
                 chrome.find_element_by_id('ExportSplitButton').click()
+                time.sleep(1)
                 chrome.find_element_by_id('ExportMenuItemXLSX').click()
+                time.sleep(1)
                 while True:
                     chrome.find_element_by_xpath('.//span[contains(., "'+report+'")]').click()
                     if report == 'Selected sheets':
