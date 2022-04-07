@@ -1113,7 +1113,7 @@ def FOREX_DATA(ind, new_item_counts, DF_KEY, FOREX_t, AREMOS_forex, code_num, ta
                     weekE = False
                     form_e = 'Average of observations through period (A)' 
             code_num, table_num, SORT_DATA, DATA_BASE, db_table_t, DB_name, snl, new_item_counts = \
-                FOREX_DATA(ind, new_item_counts, DF_KEY, FOREX_t, AREMOS_forex, code_num, table_num, KEY_DATA, SORT_DATA, DATA_BASE, db_table_t, DB_name, snl, source, freqlist, frequency, form_e, FOREXcurrency, opp, suffix, freqnum, freqsuffix, keysuffix, repl, again=other_name, semiA=semiA, semi=semi, weekA=weekA, weekE=weekE)
+                FOREX_DATA(ind, new_item_counts, DF_KEY, FOREX_t, AREMOS_forex, code_num, table_num, KEY_DATA, SORT_DATA, DATA_BASE, db_table_t, DB_name, snl, source, freqlist, frequency, form_e, FOREXcurrency, opp, suffix, freqnum, freqsuffix, keysuffix, repl, again=other_name, semiA=semiA, semi=semi, weekA=weekA, weekE=weekE, dealing_start_year=dealing_start_year)
     weekA = weekA2
     weekE = weekE2
     form_e = form_e2
