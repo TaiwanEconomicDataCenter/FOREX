@@ -1,154 +1,152 @@
-﻿2022-04-07 10:58:27 AM excel_suffix: UP2
+﻿2022-04-07 03:19:30 PM excel_suffix: UP2
 
-2022-04-07 10:58:27 AM data_processing: True
+2022-04-07 03:19:30 PM data_processing: True
 
-2022-04-07 10:58:27 AM find_unknown: False
+2022-04-07 03:19:30 PM find_unknown: False
 
-2022-04-07 10:58:27 AM dealing_start_year: 1940
+2022-04-07 03:19:30 PM dealing_start_year: 1940
 
-2022-04-07 10:58:42 AM Data Processing
+2022-04-07 03:19:36 PM Data Processing
 
-2022-04-07 10:58:53 AM ====== WebDriver manager ======
-2022-04-07 10:58:53 AM Current google-chrome version is 100.0.4896
-2022-04-07 10:58:53 AM Get LATEST driver version for 100.0.4896
-2022-04-07 10:58:54 AM Get LATEST driver version for 100.0.4896
-2022-04-07 10:58:54 AM Trying to download new driver from https://chromedriver.storage.googleapis.com/100.0.4896.60/chromedriver_win32.zip
-2022-04-07 10:58:59 AM Driver has been saved in cache [C:\Users\lawre\.wdm\drivers\chromedriver\win32\100.0.4896.60]
-2022-04-07 10:59:19 AM Reading file: FOREX_1 Time: 54 s
+2022-04-07 03:19:37 PM ====== WebDriver manager ======
+2022-04-07 03:19:38 PM Current google-chrome version is 100.0.4896
+2022-04-07 03:19:38 PM Get LATEST driver version for 100.0.4896
+2022-04-07 03:19:38 PM Driver [C:\Users\lawre\.wdm\drivers\chromedriver\win32\100.0.4896.60\chromedriver.exe] found in cache
+2022-04-07 03:19:43 PM Reading file: FOREX_1 Time: 14 s
 
-2022-04-07 10:59:19 AM Present File Exists. Reading Data From Default Path.
+2022-04-07 03:19:43 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-07 10:59:19 AM Total Columns: 259 Time: 54 s
+2022-04-07 03:19:43 PM Total Columns: 259 Time: 14 s
 
-2022-04-07 11:00:37 AM Reading file: FOREX_2 Time: 132 s
+2022-04-07 03:20:44 PM Reading file: FOREX_2 Time: 74 s
 
-2022-04-07 11:00:37 AM Present File Exists. Reading Data From Default Path.
+2022-04-07 03:20:44 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-07 11:00:38 AM Total Columns: 31 Time: 132 s
+2022-04-07 03:20:44 PM Total Columns: 31 Time: 75 s
 
-2022-04-07 11:00:42 AM Reading file: FOREX_3 Time: 137 s
+2022-04-07 03:20:48 PM Reading file: FOREX_3 Time: 79 s
 
-2022-04-07 11:00:42 AM Frequency = A Time: 137 s
+2022-04-07 03:20:48 PM Frequency = A Time: 79 s
 
-2022-04-07 11:00:42 AM Present File Exists. Reading Data From Default Path.
+2022-04-07 03:20:48 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-07 11:00:43 AM Total Rows: 219 Time: 138 s
+2022-04-07 03:20:48 PM Total Rows: 219 Time: 79 s
 
-2022-04-07 11:01:11 AM Frequency = M Time: 166 s
+2022-04-07 03:21:11 PM Frequency = M Time: 102 s
 
-2022-04-07 11:01:11 AM Present File Exists. Reading Data From Default Path.
+2022-04-07 03:21:11 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-07 11:01:17 AM Total Rows: 219 Time: 172 s
+2022-04-07 03:21:13 PM Total Rows: 219 Time: 104 s
 
-2022-04-07 11:01:53 AM Frequency = Q Time: 208 s
+2022-04-07 03:21:37 PM Frequency = Q Time: 128 s
 
-2022-04-07 11:01:53 AM Present File Exists. Reading Data From Default Path.
+2022-04-07 03:21:37 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-07 11:01:55 AM Total Rows: 219 Time: 210 s
+2022-04-07 03:21:38 PM Total Rows: 219 Time: 129 s
 
-2022-04-07 11:02:27 AM Frequency = S Time: 242 s
+2022-04-07 03:22:01 PM Frequency = S Time: 152 s
 
-2022-04-07 11:02:27 AM Present File Exists. Reading Data From Default Path.
+2022-04-07 03:22:01 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-07 11:02:29 AM Total Rows: 219 Time: 244 s
+2022-04-07 03:22:02 PM Total Rows: 219 Time: 153 s
 
-2022-04-07 11:03:00 AM Reading file: FOREX_4 Time: 275 s
+2022-04-07 03:22:25 PM Reading file: FOREX_4 Time: 176 s
 
-2022-04-07 11:03:00 AM Frequency = A Time: 275 s
+2022-04-07 03:22:25 PM Frequency = A Time: 176 s
 
-2022-04-07 11:03:00 AM Present File Exists. Reading Data From Default Path.
+2022-04-07 03:22:25 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-07 11:03:00 AM Total Rows: 220 Time: 275 s
+2022-04-07 03:22:25 PM Total Rows: 220 Time: 176 s
 
-2022-04-07 11:03:31 AM Frequency = M Time: 306 s
+2022-04-07 03:22:48 PM Frequency = M Time: 199 s
 
-2022-04-07 11:03:31 AM Present File Exists. Reading Data From Default Path.
+2022-04-07 03:22:48 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-07 11:03:33 AM Total Rows: 220 Time: 308 s
+2022-04-07 03:22:49 PM Total Rows: 220 Time: 200 s
 
-2022-04-07 11:04:08 AM Frequency = Q Time: 343 s
+2022-04-07 03:23:14 PM Frequency = Q Time: 225 s
 
-2022-04-07 11:04:08 AM Present File Exists. Reading Data From Default Path.
+2022-04-07 03:23:14 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-07 11:04:09 AM Total Rows: 220 Time: 343 s
+2022-04-07 03:23:14 PM Total Rows: 220 Time: 225 s
 
-2022-04-07 11:04:39 AM Frequency = S Time: 374 s
+2022-04-07 03:23:37 PM Frequency = S Time: 248 s
 
-2022-04-07 11:04:39 AM Present File Exists. Reading Data From Default Path.
+2022-04-07 03:23:37 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-07 11:04:40 AM Total Rows: 220 Time: 375 s
+2022-04-07 03:23:38 PM Total Rows: 220 Time: 249 s
 
-2022-04-07 11:05:11 AM Reading file: FOREX_5 Time: 406 s
+2022-04-07 03:24:00 PM Reading file: FOREX_5 Time: 271 s
 
-2022-04-07 11:05:11 AM Frequency = A Time: 406 s
+2022-04-07 03:24:00 PM Frequency = A Time: 271 s
 
-2022-04-07 11:05:11 AM Present File Exists. Reading Data From Default Path.
+2022-04-07 03:24:00 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-07 11:05:11 AM Total Rows: 219 Time: 406 s
+2022-04-07 03:24:00 PM Total Rows: 219 Time: 271 s
 
-2022-04-07 11:06:00 AM Frequency = M Time: 455 s
+2022-04-07 03:24:40 PM Frequency = M Time: 310 s
 
-2022-04-07 11:06:00 AM Present File Exists. Reading Data From Default Path.
+2022-04-07 03:24:40 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-07 11:06:02 AM Total Rows: 219 Time: 457 s
+2022-04-07 03:24:41 PM Total Rows: 219 Time: 312 s
 
-2022-04-07 11:07:09 AM Frequency = Q Time: 524 s
+2022-04-07 03:25:28 PM Frequency = Q Time: 359 s
 
-2022-04-07 11:07:09 AM Present File Exists. Reading Data From Default Path.
+2022-04-07 03:25:28 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-07 11:07:10 AM Total Rows: 219 Time: 525 s
+2022-04-07 03:25:29 PM Total Rows: 219 Time: 360 s
 
-2022-04-07 11:08:23 AM Frequency = S Time: 598 s
+2022-04-07 03:26:14 PM Frequency = S Time: 405 s
 
-2022-04-07 11:08:23 AM Present File Exists. Reading Data From Default Path.
+2022-04-07 03:26:14 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-07 11:08:25 AM Total Rows: 219 Time: 600 s
+2022-04-07 03:26:16 PM Total Rows: 219 Time: 407 s
 
-2022-04-07 11:09:35 AM Reading file: FOREX_6 Time: 670 s
+2022-04-07 03:27:04 PM Reading file: FOREX_6 Time: 455 s
 
-2022-04-07 11:09:35 AM Frequency = A Time: 670 s
+2022-04-07 03:27:04 PM Frequency = A Time: 455 s
 
-2022-04-07 11:09:35 AM Present File Exists. Reading Data From Default Path.
+2022-04-07 03:27:04 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-07 11:09:36 AM Total Rows: 220 Time: 670 s
+2022-04-07 03:27:05 PM Total Rows: 220 Time: 455 s
 
-2022-04-07 11:10:42 AM Frequency = M Time: 737 s
+2022-04-07 03:27:54 PM Frequency = M Time: 505 s
 
-2022-04-07 11:10:42 AM Present File Exists. Reading Data From Default Path.
+2022-04-07 03:27:54 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-07 11:10:44 AM Total Rows: 220 Time: 739 s
+2022-04-07 03:27:56 PM Total Rows: 220 Time: 507 s
 
-2022-04-07 11:12:19 AM Frequency = Q Time: 833 s
+2022-04-07 03:28:53 PM Frequency = Q Time: 563 s
 
-2022-04-07 11:12:19 AM Present File Exists. Reading Data From Default Path.
+2022-04-07 03:28:53 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-07 11:12:19 AM Total Rows: 220 Time: 834 s
+2022-04-07 03:28:53 PM Total Rows: 220 Time: 564 s
 
-2022-04-07 11:13:42 AM Frequency = S Time: 916 s
+2022-04-07 03:29:43 PM Frequency = S Time: 614 s
 
-2022-04-07 11:13:42 AM Present File Exists. Reading Data From Default Path.
+2022-04-07 03:29:43 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-07 11:13:42 AM Total Rows: 220 Time: 917 s
+2022-04-07 03:29:44 PM Total Rows: 220 Time: 615 s
 
-2022-04-07 11:14:58 AM Reading file: FOREX_7 Time: 993 s
+2022-04-07 03:30:21 PM Reading file: FOREX_7 Time: 652 s
 
-2022-04-07 11:14:58 AM Present File Exists. Reading Data From Default Path.
+2022-04-07 03:30:21 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-07 11:14:58 AM Total Rows: 23 Time: 993 s
+2022-04-07 03:30:22 PM Total Rows: 23 Time: 653 s
 
-2022-04-07 11:14:59 AM Reading file: FOREX_8 Time: 994 s
+2022-04-07 03:30:22 PM Reading file: FOREX_8 Time: 653 s
 
-2022-04-07 11:14:59 AM Present File Exists. Reading Data From Default Path.
+2022-04-07 03:30:22 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-07 11:14:59 AM Total Columns: 40 Time: 994 s
+2022-04-07 03:30:22 PM Total Columns: 40 Time: 653 s
 
-2022-04-07 11:25:43 AM Reading file: FOREX_9 Time: 1638 s
+2022-04-07 03:37:42 PM Reading file: FOREX_9 Time: 1093 s
 
-2022-04-07 11:25:43 AM Downloading file: FOREX_9
+2022-04-07 03:37:42 PM Present File Exists. Reading Data From Default Path.
 
-2022-04-07 11:26:17 AM Total Columns: 4 Time: 1672 s
+2022-04-07 03:37:42 PM Total Columns: 4 Time: 1093 s
 
-2022-04-07 11:29:15 AM       databank              name   db_table  db_code  ...    snl                                    source                                      form_e form_c
+2022-04-07 03:39:05 PM       databank              name   db_table  db_code  ...    snl                                    source                                      form_e form_c
 0        FOREX           A001REX  DB_A_0001  data001  ...      1  International Financial Statistics (IFS)  Average of observations through period (A)       
 1        FOREX          A001REXA  DB_A_0001  data002  ...      2  International Financial Statistics (IFS)  Average of observations through period (A)       
 2        FOREX          A001REXD  DB_A_0001  data003  ...      3  International Financial Statistics (IFS)  Average of observations through period (A)       

@@ -41,31 +41,7 @@ if excel_suffix.lower().strip() == 'mysql':
 find_unknown = False
 dealing_start_year = 1940
 start_year = 1940
-update = datetime.today()
 tStart = time.time()
-
-this_year = datetime.now().year + 1
-FREQNAME = {'A':'annual','M':'month','Q':'quarter','S':'semiannual','W':'week'}
-FREQLIST = {}
-FREQLIST['A'] = [tmp for tmp in range(start_year,this_year)]
-FREQLIST['S'] = []
-for y in range(start_year,this_year):
-    for s in range(1,3):
-        FREQLIST['S'].append(str(y)+'-S'+str(s))
-#print(FREQLIST['S'])
-FREQLIST['Q'] = []
-for q in range(start_year,this_year):
-    for r in range(1,5):
-        FREQLIST['Q'].append(str(q)+'-Q'+str(r))
-#print(FREQLIST['Q'])
-FREQLIST['M'] = []
-for y in range(start_year,this_year):
-    for m in range(1,13):
-        FREQLIST['M'].append(str(y)+'-'+str(m).rjust(2,'0'))
-#print(FREQLIST['M'])
-calendar.setfirstweekday(calendar.SATURDAY)
-FREQLIST['W'] = pd.date_range(start = str(start_year)+'-01-01',end=update,freq='W-SAT')
-FREQLIST['W_s'] = pd.date_range(start = str(start_year)+'-01-01',end=update,freq='W-SAT').strftime('%Y-%m-%d')
 
 def ERROR(error_text, waiting=False):
     if waiting == True:
@@ -1077,7 +1053,7 @@ def FOREX_DATA(ind, new_item_counts, DF_KEY, FOREX_t, AREMOS_forex, code_num, ta
         db_table = DB_TABLE+frequency+'_'+str(table_num).rjust(4,'0')
         if frequency == 'W':
             #db_table_t = db_table_t.reindex(FREQLIST['W_s'])
-            db_table_t.index = FREQLIST['W_s']
+            db_table_t.index = freqlist.strftime('%Y-%m-%d')
         DATA_BASE[db_table] = db_table_t
         DB_name.append(db_table)
         table_num += 1

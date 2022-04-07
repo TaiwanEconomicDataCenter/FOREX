@@ -45,7 +45,7 @@ log.addHandler(stream)
 key_list = ['databank', 'name', 'db_table', 'db_code', 'desc_e', 'desc_c', 'freq', 'start', 'last', 'base', 'quote', 'snl', 'source', 'form_e', 'form_c']
 start_file = 1
 last_file = 9
-update = EXT.update
+update = datetime.today()
 for i in range(len(key_list)):
     if key_list[i] == 'snl':
         snl_pos = i
@@ -57,22 +57,7 @@ def takeFirst(alist):
 
 AREMOS_forex = readExcelFile(data_path+'forex2020.xlsx', header_ = [0], sheet_name_='forex')
 
-FREQNAME = EXT.FREQNAME
-FREQLIST = EXT.FREQLIST
-
-KEY_DATA = []
-DATA_BASE_dict = {}
-db_table_t_dict = {}
-DB_name_dict = {}
-SORT_DATA = {}
-for f in FREQNAME:
-    DATA_BASE_dict[f] = {}
-    db_table_t_dict[f] = pd.DataFrame(index = FREQLIST[f], columns = [])
-    DB_name_dict[f] = []
-    SORT_DATA[f] = []
-DB_TABLE = EXT.DB_TABLE
-DB_CODE = EXT.DB_CODE
-
+FREQNAME = {'A':'annual','M':'month','Q':'quarter','S':'semiannual','W':'week'}
 table_num_dict = {}
 code_num_dict = {}
 if data_processing:
@@ -88,6 +73,41 @@ if data_processing:
     for f in FREQNAME:
         table_num_dict[f] = 1
         code_num_dict[f] = 1
+
+this_year = datetime.now().year + 1
+FREQLIST = {}
+FREQLIST['A'] = [tmp for tmp in range(start_year,this_year)]
+FREQLIST['S'] = []
+for y in range(start_year,this_year):
+    for s in range(1,3):
+        FREQLIST['S'].append(str(y)+'-S'+str(s))
+#print(FREQLIST['S'])
+FREQLIST['Q'] = []
+for q in range(start_year,this_year):
+    for r in range(1,5):
+        FREQLIST['Q'].append(str(q)+'-Q'+str(r))
+#print(FREQLIST['Q'])
+FREQLIST['M'] = []
+for y in range(start_year,this_year):
+    for m in range(1,13):
+        FREQLIST['M'].append(str(y)+'-'+str(m).rjust(2,'0'))
+#print(FREQLIST['M'])
+calendar.setfirstweekday(calendar.SATURDAY)
+FREQLIST['W'] = pd.date_range(start = str(start_year)+'-01-01',end=update,freq='W-SAT')
+FREQLIST['W_s'] = pd.date_range(start = str(start_year)+'-01-01',end=update,freq='W-SAT').strftime('%Y-%m-%d')
+
+KEY_DATA = []
+DATA_BASE_dict = {}
+db_table_t_dict = {}
+DB_name_dict = {}
+SORT_DATA = {}
+for f in FREQNAME:
+    DATA_BASE_dict[f] = {}
+    db_table_t_dict[f] = pd.DataFrame(index = FREQLIST[f], columns = [])
+    DB_name_dict[f] = []
+    SORT_DATA[f] = []
+DB_TABLE = EXT.DB_TABLE
+DB_CODE = EXT.DB_CODE
 
 merge_file_loaded = False
 if excel_suffix == 'mysql':
