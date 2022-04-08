@@ -528,7 +528,7 @@ for i in range(AREMOS_forex.shape[0]):
 logging.debug('Total Old Legacy Currency items not found: '+str(len(OLCurrency))+'\n')
 logging.debug('Total International Monetary Fund (IMF) SDRs items not found: '+str(len(SDR))+'\n')
 #print('Items not found: ', len(LEFT), '\n')
-print('Time: '+str(int(time.time() - tStart))+' s'+'\n')
+logging.debug('Time: '+str(int(time.time() - tStart))+' s'+'\n')
 if updating == False:
     if find_unknown == True:
         checkNotFound = False
