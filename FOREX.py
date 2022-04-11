@@ -425,8 +425,12 @@ for g in range(start_file,last_file+1):
     elif g == 7 or g == 10 or g == 11:
         if g == 7:
             file_path = data_path+NAME+str(g)+'_historical.xlsx'
+            temp_file_path = data_path+NAME+str(g)+'.xlsx'
             if PRESENT(file_path):
                 FOREX_t = readExcelFile(file_path, header_ =[0], index_col_=0, sheet_name_=0)
+            elif PRESENT(temp_file_path):
+                FOREX_temp = readExcelFile(temp_file_path, header_ =[0], index_col_=1, skiprows_=list(range(4)), sheet_name_=0)
+                FOREX_t = FOREX_IMF(FOREX_temp, file_path)
             else:
                 url = 'https://data.imf.org/regular.aspx?key=41175'
                 FOREX_temp = FOREX_WEB(chrome, g, file_name=NAME+str(g), url=url, header=[0], index_col=1, skiprows=list(range(4)))
