@@ -240,7 +240,7 @@ def FOREX_WEB(chrome, g, file_name, url, header=None, index_col=0, skiprows=None
                     #ActionChains(chrome).send_keys(Keys.ENTER).perform()
                     link_found = True
             elif g >= 3 and g <= 7:
-                WebDriverWait(chrome, 30).until(EC.visibility_of_element_located((By.XPATH, './/div[@class="PPTSScrollBarContainer"]')))
+                WebDriverWait(chrome, 60).until(EC.visibility_of_element_located((By.XPATH, './/div[@class="PPTSScrollBarContainer"]')))
                 if g >= 3 and g <= 6:
                     chrome.find_element_by_xpath('.//div[@class="PPTabControlItems"]/div[contains(., "'+FREQ[freq]+'")]').click()
                     while True:

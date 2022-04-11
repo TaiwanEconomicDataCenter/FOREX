@@ -343,13 +343,20 @@ for g in range(start_file,last_file+1):
             elif frequency == 'S' and (g == 4 or g == 6):
                 file_suffix = 'Q'
             file_path = data_path+NAME+str(g)+file_suffix+'_historical.xlsx'
+            temp_file_path = data_path+NAME+str(g)+file_suffix+'.xlsx'
             logging.info('Frequency = '+frequency+' Time: '+str(int(time.time() - tStart))+' s'+'\n')
             if PRESENT(file_path):
                 FOREX_t = readExcelFile(file_path, header_ =[0], index_col_=0, sheet_name_=0)
+            elif PRESENT(temp_file_path):
+                FOREX_temp = readExcelFile(temp_file_path, header_ =[0], index_col_=1, skiprows_=list(range(6)), sheet_name_=0)
+                FOREX_t = FOREX_IMF(FOREX_temp, file_path)
             else:
                 url = 'https://data.imf.org/regular.aspx?key=63087883'
                 FREQ = {'A':'Annual', 'Q':'Quarterly', 'M':'Monthly'}
-                ITEM = {3:'Domestic Currency per SDR, End of Period', 4:'Domestic Currency per SDR, Period Average', 5:'Domestic Currency per U.S. Dollar, End of Period', 6:'Domestic Currency per U.S. Dollar, Period Average'}
+                ITEM = {3:'Domestic Currency per SDR, End of Period', 
+                        4:'Domestic Currency per SDR, Period Average', 
+                        5:'Domestic Currency per U.S. Dollar, End of Period', 
+                        6:'Domestic Currency per U.S. Dollar, Period Average'}
                 FOREX_temp = FOREX_WEB(chrome, g, file_name=NAME+str(g)+file_suffix, url=url, header=[0], index_col=1, skiprows=list(range(6)), FREQ=FREQ, ITEM=ITEM, freq=file_suffix)
                 FOREX_t = FOREX_IMF(FOREX_temp, file_path)
             #print(FOREX_t)
