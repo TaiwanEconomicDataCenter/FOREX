@@ -200,12 +200,14 @@ def FOREX_WEB(chrome, g, file_name, url, header=None, index_col=0, skiprows=None
         try:
             chrome.execute_script("window.scrollTo(0,"+str(y)+")")
             if g == 1 or g == 2 or g == 8 or g == 9:
+                #選取頻率
                 WebDriverWait(chrome, 20).until(EC.element_to_be_clickable((By.XPATH, './/div[select[@name="FREQ.18"]]/div/ul'))).click()
-                for f in FREQ:
+                for f in FREQ: 
                     for d in range(FREQ[f]):
                         ActionChains(chrome).send_keys(Keys.DOWN).perform()
                     ActionChains(chrome).send_keys(Keys.ENTER).perform()
-                ActionChains(chrome).click(chrome.find_element_by_xpath('.//div[select[@name="FREQ.18"]]/div/ul/li/input')).perform()
+                ActionChains(chrome).click(chrome.find_element_by_xpath('.//div[select[@name="FREQ.18"]]/div/ul/li/input')).perform() #確認選取
+                #檢查是否有沒選到的頻率或是選到不該選的頻率
                 WebDriverWait(chrome, 15).until(EC.visibility_of_element_located((By.XPATH, './/div[select[@name="FREQ.18"]]/div/ul/li[@class="select2-search-choice"]/div')))
                 element_list = [el.text for el in chrome.find_elements_by_xpath('.//div[select[@name="FREQ.18"]]/div/ul/li[@class="select2-search-choice"]/div')]
                 for f in FREQ:
@@ -216,6 +218,7 @@ def FOREX_WEB(chrome, g, file_name, url, header=None, index_col=0, skiprows=None
                     if el not in FREQ:
                         chrome.refresh()
                         raise FileNotFoundError
+                #下載或讀取資料表
                 sys.stdout.write("\rWaiting for Download...")
                 sys.stdout.flush()
                 if g == 1 or g == 2:
