@@ -24,7 +24,7 @@ from selenium.common.exceptions import StaleElementReferenceException
 from selenium.common.exceptions import ElementClickInterceptedException
 import webdriver_manager
 from webdriver_manager.chrome import ChromeDriverManager
-sys.path.append('../TO_DB')
+sys.path.append('../../TO_DB/TO_DB')
 from TO_DB import SELECT_DF_KEY, SELECT_DATABASES, INSERT_TABLES
 
 NAME = 'FOREX_'
