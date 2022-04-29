@@ -645,6 +645,7 @@ def UPDATE(original_file, updated_file, key_list, NAME, data_path, orig_suf, up_
     original_file = original_file.reset_index()
     original_file = original_file.reindex(key_list, axis='columns')
     print('updated:', updated, '\n')
+    print('Time: '+str(int(time.time() - tStart))+' s'+'\n')
 
     return original_file, original_database
 
