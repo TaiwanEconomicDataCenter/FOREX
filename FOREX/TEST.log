@@ -1,8 +1,9 @@
-﻿2022-04-08 02:32:28 PM Checking Identities: 10 s
+﻿2022-05-04 05:30:18 PM Checking Identities: 478 s
 
-2022-04-08 02:32:33 PM unknown: 0
-2022-04-08 02:32:33 PM name too long: 0
-2022-04-08 02:32:33 PM inconsistent: 0
-2022-04-08 02:32:33 PM updated: 0
-2022-04-08 02:32:33 PM including weekly: True
-2022-04-08 02:32:33 PM too many months: False
+2022-05-04 05:30:23 PM unknown: 0
+2022-05-04 05:30:23 PM name too long: 0
+2022-05-04 05:30:23 PM inconsistent: 0
+2022-05-04 05:30:23 PM updated: 4080
+2022-05-04 05:30:23 PM including weekly: True
+2022-05-04 05:30:23 PM too many months: False
+2022-05-04 05:30:24 PM unfound: 20

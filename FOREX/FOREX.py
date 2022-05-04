@@ -16,6 +16,7 @@ import FOREX_extention as EXT
 from FOREX_extention import ERROR, MERGE, NEW_KEYS, CONCATE, UPDATE, readFile, readExcelFile, FOREX_NAME, FOREX_DATA, FOREX_CROSSRATE, OLD_LEGACY, PRESENT, FOREX_WEB, FOREX_IMF, COUNTRY, SELECT_DF_KEY, SELECT_DATABASES, INSERT_TABLES
 import FOREX_test as test
 from FOREX_test import FOREX_identity
+from pandas.errors import ParserError
 FORMAT = '%(asctime)s %(message)s'
 logging.basicConfig(level=logging.INFO, format=FORMAT, handlers=[logging.FileHandler("LOG.log", 'w', EXT.ENCODING)], datefmt='%Y-%m-%d %I:%M:%S %p')
 
@@ -224,9 +225,14 @@ for g in range(start_file,last_file+1):
         if PRESENT(file_path):
             if g == 1 or g == 2:
                 skip = [0,4]
+                FOREX_t = readFile(data_path+NAME+str(g)+'.csv', header_ = [0,1,2], index_col_=0, skiprows_=skip)
             else:
-                skip = [3]
-            FOREX_t = readFile(data_path+NAME+str(g)+'.csv', header_ = [0,1,2], index_col_=0, skiprows_=skip)
+                try:
+                    skip = [3]
+                    FOREX_t = readFile(data_path+NAME+str(g)+'.csv', header_ = [0,1,2], index_col_=0, skiprows_=skip)
+                except ParserError:
+                    skip = [0,4]
+                    FOREX_t = readFile(data_path+NAME+str(g)+'.csv', header_ = [0,1,2], index_col_=0, skiprows_=skip)
             #FOREX_t = readFile(data_path+NAME+str(g)+'.csv', header_=[0], index_col_=0)
         else:
             if g == 1 or g == 8:
@@ -245,8 +251,11 @@ for g in range(start_file,last_file+1):
             for ind in FOREX_t.index:
                 new_index.append(pd.to_datetime(ind))
             FOREX_t = FOREX_t.reindex(new_index)
-        if FOREX_t.index[0] > FOREX_t.index[1]:
+        if FOREX_t.index[10] > FOREX_t.index[11]:
             FOREX_t = FOREX_t[::-1]
+        if str(FOREX_t.index[10]).strip()[:4] < str(dealing_start_year) and str(FOREX_t.index[-10]).strip()[:4] < str(dealing_start_year):
+            print('Data not in range\n')
+            continue
         
         nG = FOREX_t.shape[1]
         logging.info('Total Columns: '+str(nG)+' Time: '+str(int(time.time() - tStart))+' s'+'\n')        
