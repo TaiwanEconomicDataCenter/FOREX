@@ -253,7 +253,7 @@ def FOREX_WEB(chrome, g, file_name, url, header=None, index_col=0, skiprows=None
                         time.sleep(10)
                         WebDriverWait(chrome, 20).until(EC.visibility_of_element_located((By.XPATH, './/table[@class="PPTLVNodesTable"]/tbody/tr'))).click()
                         try:
-                            WebDriverWait(chrome, 20).until(EC.visibility_of_element_located((By.XPATH, './/div[@class="PPTSCellConText"][contains(text(), "'+ITEM[g]+'")]')))
+                            WebDriverWait(chrome, 60).until(EC.visibility_of_element_located((By.XPATH, './/div[@class="PPTSCellConText"][contains(text(), "'+ITEM[g]+'")]')))
                             #chrome.find_element_by_xpath('.//div[@class="PPTSCellConText"][contains(text(), "'+ITEM[g]+'")]')
                         except (TimeoutException, NoSuchElementException, StaleElementReferenceException, ElementClickInterceptedException):
                             time.sleep(1)
@@ -281,7 +281,7 @@ def FOREX_WEB(chrome, g, file_name, url, header=None, index_col=0, skiprows=None
             if link_found == False:
                 raise FileNotFoundError
         except (FileNotFoundError, TimeoutException, ElementClickInterceptedException):
-            print(str(traceback.format_exc())[:700])
+            print(str(traceback.format_exc())[:1200])
             y+=500
             if (y > min(height, 5000) and link_found == False):
                 if link_message != None:

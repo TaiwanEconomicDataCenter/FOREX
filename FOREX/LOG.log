@@ -1,28 +1,170 @@
-﻿2022-05-27 09:32:16 AM excel_suffix: mysql
+﻿2022-06-20 01:49:10 PM excel_suffix: test
 
-2022-05-27 09:32:16 AM data_processing: False
+2022-06-20 01:49:10 PM data_processing: True
 
-2022-05-27 09:32:16 AM find_unknown: False
+2022-06-20 01:49:10 PM find_unknown: False
 
-2022-05-27 09:32:16 AM dealing_start_year: 1940
+2022-06-20 01:49:10 PM dealing_start_year: 1940
 
-2022-05-27 09:32:59 AM Process: File Updating
+2022-06-20 01:49:12 PM Data Processing
 
-2022-05-27 09:32:59 AM Reading main key: FOREX_keyUP.xlsx, Time: 44 s
+2022-06-20 01:49:13 PM 
 
-2022-05-27 09:33:02 AM Reading main database: FOREX_databaseUP.xlsx, Time: 48 s
+2022-06-20 01:49:13 PM ====== WebDriver manager ======
+2022-06-20 01:49:13 PM Current google-chrome version is 102.0.5005
+2022-06-20 01:49:13 PM Get LATEST chromedriver version for 102.0.5005 google-chrome
+2022-06-20 01:49:13 PM Trying to download new driver from https://chromedriver.storage.googleapis.com/102.0.5005.61/chromedriver_win32.zip
+2022-06-20 01:49:16 PM Driver has been saved in cache [C:\Users\user\.wdm\drivers\chromedriver\win32\102.0.5005.61]
+2022-06-20 01:49:18 PM Reading file: FOREX_1 Time: 9 s
 
-2022-05-27 09:38:43 AM       databank              name  ...                                      form_e form_c
-0        FOREX           A001REX  ...  Average of observations through period (A)    NaN
-1        FOREX          A001REXA  ...  Average of observations through period (A)    NaN
-2        FOREX          A001REXD  ...  Average of observations through period (A)    NaN
-3        FOREX          A001REXE  ...                           End of period (E)    NaN
-4        FOREX        A001REXEUR  ...  Average of observations through period (A)    NaN
-...        ...               ...  ...                                         ...    ...
-14822    FOREX  WB93REXEUREECB.W  ...                           End of period (E)    NaN
-14823    FOREX     WB93REXEURI.W  ...                           End of period (E)    NaN
-14824    FOREX  WB93REXEURIECB.W  ...                           End of period (E)    NaN
-14825    FOREX  WB96REXEURDECB.W  ...  Average of observations through period (A)    NaN
-14826    FOREX   WB96REXEURECB.W  ...  Average of observations through period (A)    NaN
+2022-06-20 01:49:18 PM Present File Exists. Reading Data From Default Path.
 
-[14827 rows x 15 columns]
+2022-06-20 01:49:18 PM Total Columns: 259 Time: 9 s
+
+2022-06-20 01:50:44 PM Total New Items Found: 0 Time: 95 s
+
+2022-06-20 01:50:44 PM Reading file: FOREX_2 Time: 95 s
+
+2022-06-20 01:50:44 PM Present File Exists. Reading Data From Default Path.
+
+2022-06-20 01:50:44 PM Total Columns: 31 Time: 95 s
+
+2022-06-20 01:50:49 PM Total New Items Found: 0 Time: 99 s
+
+2022-06-20 01:50:49 PM Reading file: FOREX_3 Time: 99 s
+
+2022-06-20 01:50:49 PM Frequency = A Time: 99 s
+
+2022-06-20 01:50:49 PM Downloading file: FOREX_3A
+
+2022-06-20 01:51:59 PM Total Rows: 219 Time: 170 s
+
+2022-06-20 01:52:18 PM Frequency = M Time: 189 s
+
+2022-06-20 01:52:18 PM Downloading file: FOREX_3M
+
+2022-06-20 01:53:19 PM Total Rows: 219 Time: 249 s
+
+2022-06-20 01:55:01 PM Frequency = Q Time: 352 s
+
+2022-06-20 01:55:01 PM Downloading file: FOREX_3Q
+
+2022-06-20 01:55:41 PM Total Rows: 219 Time: 391 s
+
+2022-06-20 01:56:24 PM Frequency = S Time: 435 s
+
+2022-06-20 01:56:24 PM Present File Exists. Reading Data From Default Path.
+
+2022-06-20 01:56:26 PM Total Rows: 219 Time: 436 s
+
+2022-06-20 01:56:37 PM Total New Items Found: 0 Time: 447 s
+
+2022-06-20 01:56:37 PM Reading file: FOREX_4 Time: 447 s
+
+2022-06-20 01:56:37 PM Frequency = A Time: 447 s
+
+2022-06-20 01:56:37 PM Downloading file: FOREX_4A
+
+2022-06-20 01:57:31 PM Total Rows: 220 Time: 502 s
+
+2022-06-20 01:57:51 PM Frequency = M Time: 522 s
+
+2022-06-20 01:57:51 PM Downloading file: FOREX_4M
+
+2022-06-20 01:59:01 PM Total Rows: 220 Time: 592 s
+
+2022-06-20 02:00:42 PM Frequency = Q Time: 692 s
+
+2022-06-20 02:00:42 PM Downloading file: FOREX_4Q
+
+2022-06-20 02:02:09 PM Total Rows: 220 Time: 780 s
+
+2022-06-20 02:02:50 PM Frequency = S Time: 821 s
+
+2022-06-20 02:02:50 PM Present File Exists. Reading Data From Default Path.
+
+2022-06-20 02:02:51 PM Total Rows: 220 Time: 822 s
+
+2022-06-20 02:03:02 PM Total New Items Found: 0 Time: 833 s
+
+2022-06-20 02:03:02 PM Reading file: FOREX_5 Time: 833 s
+
+2022-06-20 02:03:02 PM Frequency = A Time: 833 s
+
+2022-06-20 02:03:02 PM Downloading file: FOREX_5A
+
+2022-06-20 02:04:01 PM Total Rows: 219 Time: 892 s
+
+2022-06-20 02:04:39 PM Frequency = M Time: 930 s
+
+2022-06-20 02:04:39 PM Downloading file: FOREX_5M
+
+2022-06-20 02:05:47 PM Total Rows: 219 Time: 997 s
+
+2022-06-20 02:10:26 PM Frequency = Q Time: 1277 s
+
+2022-06-20 02:10:26 PM Downloading file: FOREX_5Q
+
+2022-06-20 02:12:04 PM Total Rows: 219 Time: 1375 s
+
+2022-06-20 02:13:41 PM Frequency = S Time: 1471 s
+
+2022-06-20 02:13:41 PM Present File Exists. Reading Data From Default Path.
+
+2022-06-20 02:13:42 PM Total Rows: 219 Time: 1473 s
+
+2022-06-20 02:14:38 PM Total New Items Found: 0 Time: 1529 s
+
+2022-06-20 02:14:38 PM Reading file: FOREX_6 Time: 1529 s
+
+2022-06-20 02:14:38 PM Frequency = A Time: 1529 s
+
+2022-06-20 02:14:38 PM Downloading file: FOREX_6A
+
+2022-06-20 02:15:35 PM Total Rows: 220 Time: 1586 s
+
+2022-06-20 02:16:25 PM Frequency = M Time: 1636 s
+
+2022-06-20 02:16:25 PM Downloading file: FOREX_6M
+
+2022-06-20 02:17:42 PM Total Rows: 220 Time: 1712 s
+
+2022-06-20 02:24:14 PM Frequency = Q Time: 2105 s
+
+2022-06-20 02:24:14 PM Downloading file: FOREX_6Q
+
+2022-06-20 02:25:20 PM Total Rows: 220 Time: 2170 s
+
+2022-06-20 02:27:40 PM Frequency = S Time: 2311 s
+
+2022-06-20 02:27:40 PM Present File Exists. Reading Data From Default Path.
+
+2022-06-20 02:27:40 PM Total Rows: 220 Time: 2311 s
+
+2022-06-20 02:29:02 PM Total New Items Found: 0 Time: 2392 s
+
+2022-06-20 02:29:02 PM Reading file: FOREX_7 Time: 2392 s
+
+2022-06-20 02:29:02 PM Downloading file: FOREX_7
+
+2022-06-20 02:30:13 PM Total Rows: 23 Time: 2464 s
+
+2022-06-20 02:30:14 PM Total New Items Found: 0 Time: 2465 s
+
+2022-06-20 02:30:14 PM Reading file: FOREX_8 Time: 2465 s
+
+2022-06-20 02:30:14 PM Downloading file: FOREX_8
+
+2022-06-20 02:31:15 PM Total Columns: 40 Time: 2526 s
+
+2022-06-20 02:48:00 PM Total New Items Found: 0 Time: 3531 s
+
+2022-06-20 02:48:00 PM Reading file: FOREX_9 Time: 3531 s
+
+2022-06-20 02:48:00 PM Downloading file: FOREX_9
+
+2022-06-20 02:48:21 PM Total Columns: 4 Time: 3551 s
+
+2022-06-20 02:48:58 PM Total New Items Found: 0 Time: 3589 s
+
+2022-06-20 02:49:00 PM = ! = No new items were found.
