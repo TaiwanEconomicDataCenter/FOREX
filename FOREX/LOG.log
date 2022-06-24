@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 ﻿2022-06-20 01:49:10 PM excel_suffix: test
 
 2022-06-20 01:49:10 PM data_processing: True
@@ -168,3 +169,169 @@
 2022-06-20 02:48:58 PM Total New Items Found: 0 Time: 3589 s
 
 2022-06-20 02:49:00 PM = ! = No new items were found.
+=======
+﻿2022-06-24 02:41:08 PM excel_suffix: UP
+
+2022-06-24 02:41:08 PM data_processing: True
+
+2022-06-24 02:41:08 PM find_unknown: False
+
+2022-06-24 02:41:08 PM dealing_start_year: 1940
+
+2022-06-24 02:41:16 PM Data Processing
+
+2022-06-24 02:41:16 PM 
+
+2022-06-24 02:41:16 PM ====== WebDriver manager ======
+2022-06-24 02:41:17 PM Current google-chrome version is 102.0.5005
+2022-06-24 02:41:17 PM Get LATEST driver version for 102.0.5005
+2022-06-24 02:41:17 PM Driver [C:\Users\tedc8\.wdm\drivers\chromedriver\win32\102.0.5005.61\chromedriver.exe] found in cache
+2022-06-24 02:41:18 PM Reading file: FOREX_1 Time: 27 s
+
+2022-06-24 02:41:18 PM Present File Exists. Reading Data From Default Path.
+
+2022-06-24 02:41:19 PM Total Columns: 259 Time: 27 s
+
+2022-06-24 02:42:06 PM Reading file: FOREX_2 Time: 74 s
+
+2022-06-24 02:42:06 PM Present File Exists. Reading Data From Default Path.
+
+2022-06-24 02:42:06 PM Total Columns: 31 Time: 74 s
+
+2022-06-24 02:42:09 PM Reading file: FOREX_3 Time: 77 s
+
+2022-06-24 02:42:09 PM Frequency = A Time: 77 s
+
+2022-06-24 02:42:09 PM Present File Exists. Reading Data From Default Path.
+
+2022-06-24 02:42:09 PM Total Rows: 219 Time: 77 s
+
+2022-06-24 02:42:22 PM Frequency = M Time: 90 s
+
+2022-06-24 02:42:22 PM Present File Exists. Reading Data From Default Path.
+
+2022-06-24 02:42:24 PM Total Rows: 219 Time: 92 s
+
+2022-06-24 02:42:45 PM Frequency = Q Time: 114 s
+
+2022-06-24 02:42:45 PM Present File Exists. Reading Data From Default Path.
+
+2022-06-24 02:42:46 PM Total Rows: 219 Time: 114 s
+
+2022-06-24 02:43:02 PM Frequency = S Time: 131 s
+
+2022-06-24 02:43:02 PM Present File Exists. Reading Data From Default Path.
+
+2022-06-24 02:43:04 PM Total Rows: 219 Time: 132 s
+
+2022-06-24 02:43:17 PM Reading file: FOREX_4 Time: 145 s
+
+2022-06-24 02:43:17 PM Frequency = A Time: 145 s
+
+2022-06-24 02:43:17 PM Present File Exists. Reading Data From Default Path.
+
+2022-06-24 02:43:17 PM Total Rows: 220 Time: 145 s
+
+2022-06-24 02:43:31 PM Frequency = M Time: 160 s
+
+2022-06-24 02:43:31 PM Present File Exists. Reading Data From Default Path.
+
+2022-06-24 02:43:33 PM Total Rows: 220 Time: 161 s
+
+2022-06-24 02:43:54 PM Frequency = Q Time: 182 s
+
+2022-06-24 02:43:54 PM Present File Exists. Reading Data From Default Path.
+
+2022-06-24 02:43:54 PM Total Rows: 220 Time: 183 s
+
+2022-06-24 02:44:10 PM Frequency = S Time: 198 s
+
+2022-06-24 02:44:10 PM Present File Exists. Reading Data From Default Path.
+
+2022-06-24 02:44:11 PM Total Rows: 220 Time: 199 s
+
+2022-06-24 02:44:23 PM Reading file: FOREX_5 Time: 211 s
+
+2022-06-24 02:44:23 PM Frequency = A Time: 211 s
+
+2022-06-24 02:44:23 PM Present File Exists. Reading Data From Default Path.
+
+2022-06-24 02:44:23 PM Total Rows: 219 Time: 212 s
+
+2022-06-24 02:44:45 PM Frequency = M Time: 233 s
+
+2022-06-24 02:44:45 PM Present File Exists. Reading Data From Default Path.
+
+2022-06-24 02:44:46 PM Total Rows: 219 Time: 234 s
+
+2022-06-24 02:45:29 PM Frequency = Q Time: 277 s
+
+2022-06-24 02:45:29 PM Present File Exists. Reading Data From Default Path.
+
+2022-06-24 02:45:29 PM Total Rows: 219 Time: 277 s
+
+2022-06-24 02:45:58 PM Frequency = S Time: 306 s
+
+2022-06-24 02:45:58 PM Present File Exists. Reading Data From Default Path.
+
+2022-06-24 02:45:59 PM Total Rows: 219 Time: 307 s
+
+2022-06-24 02:46:25 PM Reading file: FOREX_6 Time: 333 s
+
+2022-06-24 02:46:25 PM Frequency = A Time: 333 s
+
+2022-06-24 02:46:25 PM Present File Exists. Reading Data From Default Path.
+
+2022-06-24 02:46:25 PM Total Rows: 220 Time: 334 s
+
+2022-06-24 02:46:52 PM Frequency = M Time: 360 s
+
+2022-06-24 02:46:52 PM Present File Exists. Reading Data From Default Path.
+
+2022-06-24 02:46:53 PM Total Rows: 220 Time: 362 s
+
+2022-06-24 02:47:52 PM Frequency = Q Time: 420 s
+
+2022-06-24 02:47:52 PM Present File Exists. Reading Data From Default Path.
+
+2022-06-24 02:47:53 PM Total Rows: 220 Time: 421 s
+
+2022-06-24 02:48:33 PM Frequency = S Time: 461 s
+
+2022-06-24 02:48:33 PM Present File Exists. Reading Data From Default Path.
+
+2022-06-24 02:48:33 PM Total Rows: 220 Time: 461 s
+
+2022-06-24 02:49:11 PM Reading file: FOREX_7 Time: 499 s
+
+2022-06-24 02:49:11 PM Present File Exists. Reading Data From Default Path.
+
+2022-06-24 02:49:11 PM Total Rows: 23 Time: 499 s
+
+2022-06-24 02:49:12 PM Reading file: FOREX_8 Time: 500 s
+
+2022-06-24 02:49:12 PM Present File Exists. Reading Data From Default Path.
+
+2022-06-24 02:49:12 PM Total Columns: 32 Time: 500 s
+
+2022-06-24 02:50:40 PM Reading file: FOREX_9 Time: 588 s
+
+2022-06-24 02:50:40 PM Present File Exists. Reading Data From Default Path.
+
+2022-06-24 02:50:40 PM Total Columns: 4 Time: 588 s
+
+2022-06-24 02:51:58 PM       databank              name   db_table  db_code  ...    snl                                    source                                      form_e form_c
+0        FOREX           A001REX  DB_A_0001  data001  ...      1  International Financial Statistics (IFS)  Average of observations through period (A)       
+1        FOREX          A001REXA  DB_A_0001  data002  ...      2  International Financial Statistics (IFS)  Average of observations through period (A)       
+2        FOREX          A001REXD  DB_A_0001  data003  ...      3  International Financial Statistics (IFS)  Average of observations through period (A)       
+3        FOREX          A001REXE  DB_A_0001  data004  ...      4  International Financial Statistics (IFS)                           End of period (E)       
+4        FOREX        A001REXEUR  DB_A_0001  data005  ...      5  International Financial Statistics (IFS)  Average of observations through period (A)       
+...        ...               ...        ...      ...  ...    ...                                       ...                                         ...    ...
+14780    FOREX  WB93REXEUREECB.W  DB_W_0003  data115  ...  14781         Official ECB & EUROSTAT Reference                           End of period (E)       
+14781    FOREX     WB93REXEURI.W  DB_W_0003  data116  ...  14782         Official ECB & EUROSTAT Reference                           End of period (E)       
+14782    FOREX  WB93REXEURIECB.W  DB_W_0003  data117  ...  14783         Official ECB & EUROSTAT Reference                           End of period (E)       
+14783    FOREX  WB96REXEURDECB.W  DB_W_0003  data118  ...  14784         Official ECB & EUROSTAT Reference  Average of observations through period (A)       
+14784    FOREX   WB96REXEURECB.W  DB_W_0003  data119  ...  14785         Official ECB & EUROSTAT Reference  Average of observations through period (A)       
+
+[14785 rows x 15 columns]
+>>>>>>> Stashed changes
