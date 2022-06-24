@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ﻿2022-06-20 01:49:10 PM excel_suffix: test
 
 2022-06-20 01:49:10 PM data_processing: True
@@ -190,6 +191,28 @@
 
 2022-06-24 02:41:18 PM Present File Exists. Reading Data From Default Path.
 
+=======
+﻿2022-06-24 02:41:08 PM excel_suffix: UP
+
+2022-06-24 02:41:08 PM data_processing: True
+
+2022-06-24 02:41:08 PM find_unknown: False
+
+2022-06-24 02:41:08 PM dealing_start_year: 1940
+
+2022-06-24 02:41:16 PM Data Processing
+
+2022-06-24 02:41:16 PM 
+
+2022-06-24 02:41:16 PM ====== WebDriver manager ======
+2022-06-24 02:41:17 PM Current google-chrome version is 102.0.5005
+2022-06-24 02:41:17 PM Get LATEST driver version for 102.0.5005
+2022-06-24 02:41:17 PM Driver [C:\Users\tedc8\.wdm\drivers\chromedriver\win32\102.0.5005.61\chromedriver.exe] found in cache
+2022-06-24 02:41:18 PM Reading file: FOREX_1 Time: 27 s
+
+2022-06-24 02:41:18 PM Present File Exists. Reading Data From Default Path.
+
+>>>>>>> Stashed changes
 2022-06-24 02:41:19 PM Total Columns: 259 Time: 27 s
 
 2022-06-24 02:42:06 PM Reading file: FOREX_2 Time: 74 s
@@ -334,4 +357,7 @@
 14784    FOREX   WB96REXEURECB.W  DB_W_0003  data119  ...  14785         Official ECB & EUROSTAT Reference  Average of observations through period (A)       
 
 [14785 rows x 15 columns]
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
