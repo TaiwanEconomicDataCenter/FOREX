@@ -1,28 +1,28 @@
-﻿2022-06-24 04:38:20 PM excel_suffix: mysql
+﻿2022-10-04 02:49:47 PM excel_suffix: mysql
 
-2022-06-24 04:38:20 PM data_processing: False
+2022-10-04 02:49:47 PM data_processing: False
 
-2022-06-24 04:38:20 PM find_unknown: False
+2022-10-04 02:49:47 PM find_unknown: False
 
-2022-06-24 04:38:20 PM dealing_start_year: 1940
+2022-10-04 02:49:47 PM dealing_start_year: 1940
 
-2022-06-24 04:38:52 PM Process: File Updating
+2022-10-04 02:50:16 PM Process: File Updating
 
-2022-06-24 04:38:52 PM Reading main key: FOREX_keyUP.xlsx, Time: 61 s
+2022-10-04 02:50:16 PM Reading main key: FOREX_keyUP.xlsx, Time: 33 s
 
-2022-06-24 04:38:56 PM Reading main database: FOREX_databaseUP.xlsx, Time: 64 s
+2022-10-04 02:50:19 PM Reading main database: FOREX_databaseUP.xlsx, Time: 36 s
 
-2022-06-24 04:43:46 PM       databank              name   db_table  db_code  ...    snl                                    source                                      form_e form_c
-0        FOREX           A001REX  DB_A_0001  data001  ...      1  International Financial Statistics (IFS)  Average of observations through period (A)    NaN
-1        FOREX          A001REXA  DB_A_0001  data002  ...      2  International Financial Statistics (IFS)  Average of observations through period (A)    NaN
-2        FOREX          A001REXD  DB_A_0001  data003  ...      3  International Financial Statistics (IFS)  Average of observations through period (A)    NaN
-3        FOREX          A001REXE  DB_A_0001  data004  ...      4  International Financial Statistics (IFS)                           End of period (E)    NaN
-4        FOREX        A001REXEUR  DB_A_0001  data005  ...      5  International Financial Statistics (IFS)  Average of observations through period (A)    NaN
-...        ...               ...        ...      ...  ...    ...                                       ...                                         ...    ...
-14822    FOREX  WB93REXEUREECB.W  DB_W_0003  data115  ...  14823         Official ECB & EUROSTAT Reference                           End of period (E)    NaN
-14823    FOREX     WB93REXEURI.W  DB_W_0003  data116  ...  14824         Official ECB & EUROSTAT Reference                           End of period (E)    NaN
-14824    FOREX  WB93REXEURIECB.W  DB_W_0003  data117  ...  14825         Official ECB & EUROSTAT Reference                           End of period (E)    NaN
-14825    FOREX  WB96REXEURDECB.W  DB_W_0003  data118  ...  14826         Official ECB & EUROSTAT Reference  Average of observations through period (A)    NaN
-14826    FOREX   WB96REXEURECB.W  DB_W_0003  data119  ...  14827         Official ECB & EUROSTAT Reference  Average of observations through period (A)    NaN
+2022-10-04 03:02:01 PM       databank              name  ...                                      form_e form_c
+0        FOREX           A001REX  ...  Average of observations through period (A)    NaN
+1        FOREX          A001REXA  ...  Average of observations through period (A)    NaN
+2        FOREX          A001REXD  ...  Average of observations through period (A)    NaN
+3        FOREX          A001REXE  ...                           End of period (E)    NaN
+4        FOREX        A001REXEUR  ...  Average of observations through period (A)    NaN
+...        ...               ...  ...                                         ...    ...
+14822    FOREX  WB93REXEUREECB.W  ...                           End of period (E)    NaN
+14823    FOREX     WB93REXEURI.W  ...                           End of period (E)    NaN
+14824    FOREX  WB93REXEURIECB.W  ...                           End of period (E)    NaN
+14825    FOREX  WB96REXEURDECB.W  ...  Average of observations through period (A)    NaN
+14826    FOREX   WB96REXEURECB.W  ...  Average of observations through period (A)    NaN
 
 [14827 rows x 15 columns]
