@@ -228,10 +228,10 @@ for g in range(start_file,last_file+1):
                 FOREX_t = readFile(data_path+NAME+str(g)+'.csv', header_ = [0,1,2], index_col_=0, skiprows_=skip)
             else:
                 try:
-                    skip = [3]
+                    skip = [0,4]
                     FOREX_t = readFile(data_path+NAME+str(g)+'.csv', header_ = [0,1,2], index_col_=0, skiprows_=skip)
                 except:
-                    skip = [0,4]
+                    skip = [3]
                     FOREX_t = readFile(data_path+NAME+str(g)+'.csv', header_ = [0,1,2], index_col_=0, skiprows_=skip)
             #FOREX_t = readFile(data_path+NAME+str(g)+'.csv', header_=[0], index_col_=0)
         else:
