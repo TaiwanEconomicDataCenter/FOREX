@@ -250,12 +250,17 @@ for g in range(start_file,last_file+1):
             new_index = []
             for ind in FOREX_t.index:
                 new_index.append(pd.to_datetime(ind))
-            FOREX_t = FOREX_t.reindex(new_index)
+            FOREX_t.index = new_index
         if FOREX_t.index[10] > FOREX_t.index[11]:
             FOREX_t = FOREX_t[::-1]
         if str(FOREX_t.index[10]).strip()[:4] < str(dealing_start_year) and str(FOREX_t.index[-10]).strip()[:4] < str(dealing_start_year):
             print('Data not in range\n')
             continue
+        if str(FOREX_t.columns[0]).find('/') >= 0:
+            new_column = []
+            for col in FOREX_t.columns:
+                new_column.append(str(col).split('/')[0])
+            FOREX_t.columns = new_column
         
         nG = FOREX_t.shape[1]
         logging.info('Total Columns: '+str(nG)+' Time: '+str(int(time.time() - tStart))+' s'+'\n')        
